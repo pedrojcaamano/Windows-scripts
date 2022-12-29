@@ -1,0 +1,5 @@
+@echo off
+Pushd "Filepath"
+for %%a in (*) do (
+  ffmpeg -i "%%~fa" "%%~na.mp3"
+)
